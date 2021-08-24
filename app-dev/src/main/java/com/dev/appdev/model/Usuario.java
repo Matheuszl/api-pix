@@ -11,51 +11,78 @@ import javax.persistence.SequenceGenerator;
 
 @Entity
 @SequenceGenerator(name = "seq_usuario", sequenceName = "seq_usuario", allocationSize = 1, initialValue = 1)
-public class Usuario implements Serializable{
+public class Usuario implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_usuario")
 	private Long id;
-	
+
+	@Column(nullable = false)
+	private String cpf;
+
 	@Column(nullable = false)
 	private String nome;
-	
-	
+
+	@Column(nullable = false)
+	private String endereco;
+
+	@Column(nullable = false)
+	private double saldoConta;
+
 	public Usuario() {
 
 	}
 
-
-	public Usuario(Long id, String nome) {
+	public Usuario(Long id, String cpf, String nome, String endereco, double saldoConta) {
 		super();
 		this.id = id;
+		this.cpf = cpf;
 		this.nome = nome;
+		this.endereco = endereco;
+		this.saldoConta = saldoConta;
 	}
 
+	public String getCpf() {
+		return cpf;
+	}
 
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
 
+	public String getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
+	}
+
+	public double getSaldoConta() {
+		return saldoConta;
+	}
+
+	public void setSaldoConta(double saldoConta) {
+		this.saldoConta = saldoConta;
+	}
 
 	public Long getId() {
 		return id;
 	}
 
-
 	public void setId(Long id) {
 		this.id = id;
 	}
-
 
 	public String getNome() {
 		return nome;
 	}
 
-
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
 
 	@Override
 	public int hashCode() {
@@ -64,7 +91,6 @@ public class Usuario implements Serializable{
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		return result;
 	}
-
 
 	@Override
 	public boolean equals(Object obj) {
@@ -83,10 +109,4 @@ public class Usuario implements Serializable{
 		return true;
 	}
 
-	
-	
-	
-	
-	
-	
 }
