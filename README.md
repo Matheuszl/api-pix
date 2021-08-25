@@ -14,6 +14,18 @@ Uma aplicação API REST com integração a API PIX da Gerencianet, desenvolvida
 - [:heavy_check_mark:] em desenvolvimento de novas features...
 
 
+### 🛠 Fluxo de aplicação do pix
+<h1 align="center">
+    <img alt="fluxo" title="fluxo" src="https://github.com/Matheuszl/api-rest-springboot/blob/main/fluxo.png" />
+</h1>
+
+
+<h1 align="center">
+    <img alt="fluxo" title="fluxo" src="https://github.com/Matheuszl/api-rest-springboot/blob/main/fluxo-api-pix.png" />
+</h1>
+
+
+
 
 ---
 ### 🛠 Tecnologias
