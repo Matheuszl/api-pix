@@ -63,7 +63,7 @@ Ferramentas:
 ### 👨‍💻 Desenvolvedor
 <table>
   <tr>
-    <td align="center"><img style="border-radius: 50%;" src="https://avatars2.githubusercontent.com/u/48697859?v=4" width="100px;" alt=""/><br /><sub><b>Matheus Zalamena</b></sub></a><br /><a  href="https://github.com/Matheuszl"> 👨‍🚀 </a></td>    
+    <td align="center"><img style="border-radius: 50%;" src="https://avatars2.githubusercontent.com/u/48697859?v=4" width="100px;" alt=""/><br /><sub><b>Matheus Zalamena</b></sub></a><br /><a  href="https://github.com/Matheuszl"> </a></td>    
   </tr>
 </table>
 
